@@ -48,4 +48,10 @@ public class ScoreKeeper {
     public String getScore() {
         return String.format("%03d:%03d", scoreTeamA, scoreTeamB);
     }
+
+    // Reset the score of the game
+    public void resetScore() {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+    }
 }
