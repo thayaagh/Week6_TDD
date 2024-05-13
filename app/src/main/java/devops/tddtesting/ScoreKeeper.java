@@ -42,5 +42,10 @@ public class ScoreKeeper {
     // Get the score for Team B
     public int getScoreTeamB() {
         return scoreTeamB;
-    }        
+    }      
+    
+    // Get the score of the game
+    public String getScore() {
+        return String.format("%d:%d", scoreTeamA, scoreTeamB);
+    }
 }
