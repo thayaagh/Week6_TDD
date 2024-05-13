@@ -62,7 +62,7 @@ public class ScoreKeeperTest {
         scoreKeeper.scoreTeamA2(); // Team A scores 2 additional points, total 3
         scoreKeeper.scoreTeamB2(); // Team B scores 2 points
         scoreKeeper.scoreTeamB1(); // Team B scores 1 additional point, total 3
-        String expected = "3:3";
+        String expected = "003:003";
         String actual = scoreKeeper.getScore();
         assertEquals(expected, actual, "The score should be formatted as '003:003'");    
     }
