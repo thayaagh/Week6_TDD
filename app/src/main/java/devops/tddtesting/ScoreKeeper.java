@@ -1,8 +1,8 @@
 package devops.tddtesting;
 
 public class ScoreKeeper {
-    private int scoreTeamA = 1;
-    private int scoreTeamB = 1;
+    private int scoreTeamA = 0;
+    private int scoreTeamB = 0;
 
     // Get the score for Team A
     public int getScoreTeamA() {
