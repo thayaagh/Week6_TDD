@@ -46,6 +46,6 @@ public class ScoreKeeper {
     
     // Get the score of the game
     public String getScore() {
-        return String.format("%d:%d", scoreTeamA, scoreTeamB);
+        return String.format("%03d:%03d", scoreTeamA, scoreTeamB);
     }
 }
