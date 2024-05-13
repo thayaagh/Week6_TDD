@@ -66,4 +66,15 @@ public class ScoreKeeperTest {
         String actual = scoreKeeper.getScore();
         assertEquals(expected, actual, "The score should be formatted as '003:003'");    
     }
+
+    @Test
+    void resetScoreOfBothTeams() {
+        scoreKeeper.scoreTeamA1(); // Team A scores 1 point
+        scoreKeeper.scoreTeamA2(); // Team A scores 2 additional points, total 3
+        scoreKeeper.scoreTeamB2(); // Team B scores 2 points
+        scoreKeeper.scoreTeamB1(); // Team B scores 1 additional point, total 3
+        scoreKeeper.resetScore();
+        assertEquals(0, scoreKeeper.getScoreTeamA(), "Score for Team A should be reset to 0");
+        assertEquals(0, scoreKeeper.getScoreTeamB(), "Score for Team B should be reset to 0");
+    }
 }
