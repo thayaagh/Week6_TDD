@@ -31,4 +31,10 @@ public class ScoreKeeperTest {
         scoreKeeper.scoreTeamB1();
         assertEquals(1, scoreKeeper.getScoreTeamB(), "Score for Team B should be 1");
     }
+
+    @Test
+    void scoreTeamAShouldBeIncreasedByTwo() {
+        scoreKeeper.scoreTeamA2();
+        assertEquals(2, scoreKeeper.getScoreTeamA(), "Score for Team A should be 2");
+    }
 }
