@@ -49,4 +49,10 @@ public class ScoreKeeperTest {
         scoreKeeper.scoreTeamA3();
         assertEquals(3, scoreKeeper.getScoreTeamA(), "Score for Team A should be 3");
     }
+
+    @Test
+    void scoreTeamBShouldBeIncreasedByThree() {
+        scoreKeeper.scoreTeamB3();
+        assertEquals(3, scoreKeeper.getScoreTeamB(), "Score for Team B should be 3");
+    }
 }
