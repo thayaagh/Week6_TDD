@@ -31,7 +31,7 @@ public class ScoreKeeper {
 
     // Adds 3 points to Team B's score
     public void scoreTeamB3() {
-
+        scoreTeamB += 3;
     }
 
     // Get the score for Team A
